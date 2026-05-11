@@ -55,7 +55,7 @@ Socket programming finds applications in various domains, including web developm
 
 ## Program:
 Server side:
-'''
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8001))
@@ -71,24 +71,26 @@ while True:
     else:
         c.close()
         break
-'''
+```
 
 Client side:
-'''
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8001))
 while True:
      print(s.recv(1024).decode())
      s.send("Acknowledgement Received ".encode())
-'''
+```
 
 ## Output:
 Server side:
-<img width="1920" height="1080" alt="Screenshot 2026-05-11 142946" src="https://github.com/user-attachments/assets/2a9eb726-f948-43e0-8f61-806b7f419d73" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-11 142946" src="https://github.com/user-attachments/assets/dbca298c-6846-4bde-80e0-d6a9e9756e96" />
+
 
 Client side:
-<img width="1920" height="1080" alt="Screenshot 2026-05-11 143003" src="https://github.com/user-attachments/assets/5af949d7-24ea-4e48-be00-00825342f0b4" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-11 143003" src="https://github.com/user-attachments/assets/a9875a7b-5437-4493-992a-d82b0029163b" />
+
 
 
 ## Result:
